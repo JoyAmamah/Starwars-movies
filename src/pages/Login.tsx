@@ -14,19 +14,18 @@ const Login = () => {
     try {
      const res =   await signInWithEmailAndPassword(auth, email, password)
      console.log(res)
-       navigate('/home')
+       navigate('/moviedashboard')
     }catch(error) {
       console.log(error)
     }
   }
 
   return (
-    <section className="flex justify-center items-center h-screen bg-gray-900 text-white">
+    <section className="flex justify-center items-center h-screen text-white">
       <div 
-        // onSubmit={handleSubmit}
         className="bg-gray-800 p-6 rounded-lg shadow-lg w-96"
       >
-        <h2 className="text-2xl font-bold mb-4 text-center">Login Page</h2>
+        <h2 className="text-2xl font-bold mb-4 text-center">Welcome</h2>
 
         <label htmlFor="email" className="block mb-2">Email:</label>
         <input 
@@ -52,8 +51,6 @@ const Login = () => {
 
         <button 
         onClick={handleSubmit}
-        //   type="submit" 
-        //   type="submit" 
           className="w-full bg-blue-500 p-2 rounded hover:bg-blue-600 transition"
         >
           Log in

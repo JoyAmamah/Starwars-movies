@@ -4,6 +4,7 @@ type UserState = {
   email: string | null;
   uid: string | null;
   token: string | null;
+  displayName: string | null;
 };
 
 interface AuthState {

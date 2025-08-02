@@ -4,8 +4,15 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {},
+ theme: {
+  extend: {
+    fontFamily: {
+      sans: ['Open Sans', 'sans-serif'],
+    },
+     animation: {
+  'spin-slower': 'spin 2.5s linear infinite',
+      },
   },
+},
   plugins: [],
 }

@@ -3,13 +3,14 @@ import "./App.css";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Movies from "./pages/Movies";
 import type { AppDispatch } from "./store/store";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { auth } from "./firebase";
 import { setUser, clearUser } from "./store/authSlice";
 import ProtectedRoute from "./components/ProtectedRoute";
+import MovieCard from "./components/MovieCard";
+import MoviesDashboard from "./pages/MoviesDashboard";
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();
@@ -23,6 +24,7 @@ function App() {
             email: user.email,
             uid: user.uid,
             token: token,
+            displayName: null
           })
         );
       } else {
@@ -35,15 +37,17 @@ function App() {
 
   return (
     <>
+    
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/moviecard" element={<MovieCard />} />
         <Route
-          path="/home"
+          path="/moviedashboard"
           element={
             <ProtectedRoute>
-              <Movies />
+              <MoviesDashboard />
             </ProtectedRoute>
           }
         />

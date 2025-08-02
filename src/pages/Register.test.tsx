@@ -1,9 +1,7 @@
-// __tests__/Register.test.tsx
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import Register from "../pages/Register";
 import { Provider } from "react-redux";
-import store from "../store/store";
+import {store} from "../store/store";
 import { BrowserRouter } from "react-router-dom";
 
 test("submit is disabled initially", async () => {

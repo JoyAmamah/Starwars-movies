@@ -4,8 +4,7 @@ import App from "./App";
 import * as reactRedux from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
-import * as firebase from "../firebase";
-
+ 
 jest.mock("firebase/auth", () => ({
   onAuthStateChanged: jest.fn(),
 }));
