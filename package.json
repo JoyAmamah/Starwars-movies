@@ -9,7 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "jest"
-
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
@@ -18,7 +17,6 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0",
-    
     "react-router": "^7.7.1",
     "react-router-dom": "^7.7.1"
   },
@@ -30,6 +28,7 @@
     "@types/jest": "^30.0.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
+    "@types/redux-mock-store": "^1.5.0",
     "@vitejs/plugin-react": "^4.6.0",
     "autoprefixer": "^10.4.21",
     "babel-jest": "^30.0.5",
@@ -40,6 +39,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30.0.5",
     "postcss": "^8.5.6",
+    "redux-mock-store": "^1.5.5",
     "tailwindcss": "^3.4.17",
     "ts-jest": "^29.4.0",
     "typescript": "~5.8.3",
