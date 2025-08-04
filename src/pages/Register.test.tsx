@@ -14,5 +14,5 @@ test("submit is disabled initially", async () => {
   );
 
   const button = screen.getByRole("button", { name: /register/i });
-  expect(button).toBeNull();
+  expect(button).toBeDisabled();
 });

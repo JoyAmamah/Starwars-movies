@@ -1,4 +1,3 @@
-// __tests__/App.test.tsx
 import { render } from "@testing-library/react";
 import App from "./App";
 import * as reactRedux from "react-redux";
@@ -23,7 +22,7 @@ test("App sets user if Firebase auth returns a user", () => {
       uid: "123",
       getIdToken: () => Promise.resolve("token123"),
     });
-    return jest.fn(); // unsubscribe
+    return jest.fn(); 
   });
 
   render(

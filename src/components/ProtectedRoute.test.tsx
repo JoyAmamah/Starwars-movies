@@ -1,4 +1,3 @@
-// __tests__/ProtectedRoute.test.tsx
 import { render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { MemoryRouter, Routes, Route } from "react-router-dom";

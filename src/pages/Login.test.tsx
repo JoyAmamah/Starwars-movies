@@ -13,5 +13,5 @@ test("renders login form", () => {
     </Provider>
   );
 
-  expect(screen.getByRole("button", { name: /login/i })).toBeDefined();
+  expect(screen.getByRole("button", { name: /login/i })).toBeInTheDocument();
 });
